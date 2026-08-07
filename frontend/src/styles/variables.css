@@ -1,0 +1,113 @@
+:root {
+  /* Common Core Styles */
+  --color-primary: #0ea5e9;       /* Sky blue for primary brand */
+  --color-primary-hover: #0284c7;
+  --color-success: #10b981;       /* Emerald for success states */
+  --color-warning: #f59e0b;       /* Amber for warning states */
+  --color-danger: #ef4444;        /* Red for danger states */
+
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  
+  --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Variables (Default) */
+:root, :root[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e2e8f0;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #334155;     /* Darker slate for improved readability */
+  --text-muted: #64748b;
+  
+  /* Role specific colors (high contrast for light background) */
+  --color-role-admin: #7c3aed;    /* Violet */
+  --color-role-doctor: #2563eb;   /* Blue */
+  --color-role-receptionist: #0f766e; /* Teal */
+
+  /* Glassmorphism & UI Accents */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.05);
+  --glass-blur: blur(12px);
+
+  /* Inputs & Panels styling */
+  --input-bg: rgba(15, 23, 42, 0.02);
+  --input-border: rgba(15, 23, 42, 0.08);
+  --input-focus-bg: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.7);
+
+  /* Adaptive Status Badges (High Contrast for Light Mode) */
+  --badge-scheduled-bg: rgba(29, 78, 216, 0.08);
+  --badge-scheduled-border: rgba(29, 78, 216, 0.18);
+  --badge-scheduled-color: #1d4ed8;
+
+  --badge-checked-in-bg: rgba(180, 83, 9, 0.08);
+  --badge-checked-in-border: rgba(180, 83, 9, 0.18);
+  --badge-checked-in-color: #b45309;
+
+  --badge-completed-bg: rgba(4, 120, 87, 0.08);
+  --badge-completed-border: rgba(4, 120, 87, 0.18);
+  --badge-completed-color: #047857;
+
+  --badge-cancelled-bg: rgba(185, 28, 28, 0.08);
+  --badge-cancelled-border: rgba(185, 28, 28, 0.18);
+  --badge-cancelled-color: #b91c1c;
+
+  --badge-noshow-bg: rgba(51, 65, 85, 0.08);
+  --badge-noshow-border: rgba(51, 65, 85, 0.18);
+  --badge-noshow-color: #334155;
+}
+
+/* Dark Theme Variables */
+:root[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  /* Role specific colors */
+  --color-role-admin: #a855f7;    /* Purple */
+  --color-role-doctor: #3b82f6;   /* Blue */
+  --color-role-receptionist: #0d9488; /* Teal */
+
+  /* Glassmorphism & UI Accents */
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-blur: blur(12px);
+
+  /* Inputs & Panels styling */
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --input-border: rgba(255, 255, 255, 0.08);
+  --input-focus-bg: rgba(15, 23, 42, 0.8);
+  --card-bg: rgba(30, 41, 59, 0.7);
+
+  /* Adaptive Status Badges (Soft Pastels for Dark Mode) */
+  --badge-scheduled-bg: rgba(59, 130, 246, 0.1);
+  --badge-scheduled-border: rgba(59, 130, 246, 0.3);
+  --badge-scheduled-color: #93c5fd;
+
+  --badge-checked-in-bg: rgba(245, 158, 11, 0.1);
+  --badge-checked-in-border: rgba(245, 158, 11, 0.3);
+  --badge-checked-in-color: #fde047;
+
+  --badge-completed-bg: rgba(16, 185, 129, 0.1);
+  --badge-completed-border: rgba(16, 185, 129, 0.3);
+  --badge-completed-color: #a7f3d0;
+
+  --badge-cancelled-bg: rgba(239, 68, 68, 0.1);
+  --badge-cancelled-border: rgba(239, 68, 68, 0.3);
+  --badge-cancelled-color: #fca5a5;
+
+  --badge-noshow-bg: rgba(100, 116, 139, 0.15);
+  --badge-noshow-border: rgba(100, 116, 139, 0.3);
+  --badge-noshow-color: #cbd5e1;
+}

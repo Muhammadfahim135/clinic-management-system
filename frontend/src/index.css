@@ -1,0 +1,6 @@
+/* Reset index.css - All custom premium styles are in src/styles/app.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

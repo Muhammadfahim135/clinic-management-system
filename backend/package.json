@@ -1,0 +1,49 @@
+{
+  "name": "clinic-management-backend",
+  "version": "1.0.0",
+  "description": "Backend for Clinic Management System",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "migrate": "ts-node src/db/migrate.ts",
+    "migrate:patients": "ts-node src/db/migrate_patients.ts",
+    "migrate:visits": "ts-node src/db/migrate_visits.ts",
+    "migrate:images": "ts-node src/db/migrate_images.ts",
+    "migrate:appointments": "ts-node src/db/migrate_appointments.ts",
+    "migrate:prescriptions": "ts-node src/db/migrate_prescriptions.ts",
+    "migrate:billing": "ts-node src/db/migrate_billing.ts",
+    "migrate:cnic": "ts-node src/db/migrate_cnic_encryption.ts",
+    "migrate:softdelete": "ts-node src/db/migrate_patient_soft_delete.ts",
+    "migrate:patientdocs": "ts-node src/db/migrate_patient_level_documents.ts",
+    "migrate:hipaa": "ts-node src/db/migrate_hipaa_gdpr_compliance.ts",
+    "migrate:enhancements": "ts-node src/db/migrate_enhancements.ts",
+    "migrate:all": "ts-node src/db/migrate.ts && ts-node src/db/migrate_patients.ts && ts-node src/db/migrate_visits.ts && ts-node src/db/migrate_images.ts && ts-node src/db/migrate_appointments.ts && ts-node src/db/migrate_prescriptions.ts && ts-node src/db/migrate_billing.ts && ts-node src/db/migrate_cnic_encryption.ts && ts-node src/db/migrate_patient_soft_delete.ts && ts-node src/db/migrate_patient_level_documents.ts && ts-node src/db/migrate_hipaa_gdpr_compliance.ts && ts-node src/db/migrate_enhancements.ts",
+    "seed": "ts-node src/db/seed.ts",
+    "seed:complete": "ts-node src/db/seed_complete.ts",
+    "seed:images": "ts-node src/db/seed_images.ts",
+    "db:clear": "ts-node src/db/clear_data.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.1.1",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^20.14.9",
+    "@types/pg": "^8.11.6",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
